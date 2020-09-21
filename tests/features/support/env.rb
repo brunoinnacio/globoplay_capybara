@@ -3,8 +3,10 @@ require 'capybara/cucumber'
 require 'capybara/dsl'
 require 'capybara/rspec/matchers'
 require 'selenium-webdriver'
+require 'site_prism'
 require 'rspec'
 require 'report_builder'
+
 
 World(Capybara::DSL)
 World(Capybara::RSpecMatchers)
