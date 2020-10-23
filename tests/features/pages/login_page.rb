@@ -1,16 +1,10 @@
-# class para testar checkbox
+
 class LoginPage < SitePrism::Page
   set_url '/'
 
-  element :campo_email, 'login'
-  element :campo_senha, 'password'
-  element :botao_entrar, 'Entrar'
-
-
-  def login (email,senha)
-    campo_email.set email
-    campo_senha.set senha
-    #botao_entrar.click
-   
+  def login
+    fill_in 'login', with: 'brunoinnacio@gmail.com'
+    fill_in 'password', with: 'bli260653'
+    click_button 'Entrar'
   end
 end
